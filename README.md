@@ -47,7 +47,18 @@
     npm run start
     ```
 
-3. **開啟手機裝置的相機掃描 QR code 於 Expo Go 中開啟應用**
+3. **用手機裝置或是模擬器開啟應用**
+    - 實體手機
+        - iOS：在 iPhone 上安裝並開啟 Expo Go，用相機掃描終端機或瀏覽器顯示的 QR Code。
+        - Android：在 Android 手機上安裝 Expo Go，同樣掃描 QR Code 即可開啟。
+        
+    - 模擬器
+        - iOS 模擬器（僅限 macOS）：
+            安裝 Xcode，並安裝ios Simulator component，於終端機執行：
+            ```sh
+            npm run ios
+            ```
+            可自動於 iOS Simulator 中開啟應用
 
 ## 主要技術
 
