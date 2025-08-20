@@ -1,12 +1,18 @@
 {
   "expo": {
     "name": "expo-threads",
-    "slug": "expo-threads",
+    "slug": "reactnativesocialmedia",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -24,6 +30,13 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "5cbd9433-c3b7-4f28-9b3b-50e0ee3c1787"
+      }
+    },
+    "owner": "youhsiangwang"
   }
 }
