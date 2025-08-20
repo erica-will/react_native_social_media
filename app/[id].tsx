@@ -1,8 +1,8 @@
-import React from 'react';
+import ThreadItem from '@/src/components/ThreadItem';
+import { useThreadsStore } from '@/src/store/threads';
 import { useLocalSearchParams } from 'expo-router';
-import { View, Text, FlatList, TextInput, Button, SafeAreaView } from 'react-native';
-import { useThreadsStore } from '@/store/threads';
-import ThreadItem from '@/components/ThreadItem';
+import React from 'react';
+import { Button, FlatList, SafeAreaView, Text, TextInput, View } from 'react-native';
 
 
 export default function ThreadDetail() {

@@ -1,8 +1,8 @@
-import React from 'react';
+import ThreadItem from '@/src/components/ThreadItem';
+import { useThreadsStore } from '@/src/store/threads';
 import { Link } from 'expo-router';
-import { FlatList, RefreshControl, SafeAreaView, View, Text, Button } from 'react-native';
-import { useThreadsStore } from '@/store/threads';
-import ThreadItem from '@/components/ThreadItem';
+import React from 'react';
+import { Button, FlatList, RefreshControl, SafeAreaView, Text, View } from 'react-native';
 
 
 export default function Feed() {

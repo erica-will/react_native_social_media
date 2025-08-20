@@ -1,6 +1,6 @@
-import React from 'react';
+import { useThreadsStore } from '@/src/store/threads';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useThreadsStore } from '@/store/threads';
+import React from 'react';
 
 
 export function useAuth() {

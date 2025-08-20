@@ -1,9 +1,7 @@
-import React from 'react';
+import { Thread, useThreadsStore } from '@/src/store/threads';
+import { timeAgo } from '@/src/utils/time';
 import { Link } from 'expo-router';
-import { View, Text, Pressable } from 'react-native';
-import { Thread } from '@/store/threads';
-import { useThreadsStore } from '@/store/threads';
-import { timeAgo } from '@/utils/time';
+import { Pressable, Text, View } from 'react-native';
 
 
 export default function ThreadItem({ thread, showActions = true }: { thread: Thread; showActions?: boolean }) {

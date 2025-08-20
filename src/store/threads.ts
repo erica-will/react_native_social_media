@@ -1,12 +1,12 @@
-import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { create } from 'zustand';
+import { createJSONStorage, persist } from 'zustand/middleware';
 import { immer } from 'zustand/middleware/immer';
 
 
 export type User = { id: string; handle: string; displayName: string };
 export type Reply = { id: string; author: User; text: string; createdAt: number };
-export type Thread = { id: string; author: User; text: string; createdAt: number; likes: number; replies: Reply[] };
+export type Thread = { id: string; author: User; text: string; createdAt: number; likes: number; replies: Reply[]; likes_toggle?: boolean; };
 
 
 function uid() { return Math.random().toString(36).slice(2); }
@@ -67,6 +67,6 @@ export const useThreadsStore = create<State>()(
 
             getThreadById: (id) => get().threads.find((t) => t.id === id),
         })),
-        { name: 'threads-store', getStorage: () => AsyncStorage }
+        { name: 'threads-store', storage: createJSONStorage(() => AsyncStorage) }
     )
 );

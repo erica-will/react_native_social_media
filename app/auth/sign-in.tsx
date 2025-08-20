@@ -1,6 +1,6 @@
+import { useAuth } from '@/src/hooks/useAuth';
 import React from 'react';
-import { SafeAreaView, TextInput, Button, View, Text } from 'react-native';
-import { useAuth } from '@/hooks/useAuth';
+import { Button, SafeAreaView, Text, TextInput } from 'react-native';
 
 
 export default function SignIn() {

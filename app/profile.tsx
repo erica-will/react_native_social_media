@@ -1,6 +1,5 @@
-import React from 'react';
-import { SafeAreaView, View, Text, Button } from 'react-native';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/src/hooks/useAuth';
+import { Button, SafeAreaView, Text, View } from 'react-native';
 
 
 export default function Profile() {

@@ -1,7 +1,7 @@
-import React from 'react';
+import { useThreadsStore } from '@/src/store/threads';
 import { useRouter } from 'expo-router';
-import { View, TextInput, Button, SafeAreaView } from 'react-native';
-import { useThreadsStore } from '@/store/threads';
+import React from 'react';
+import { Button, SafeAreaView, TextInput } from 'react-native';
 
 
 export default function Compose() {

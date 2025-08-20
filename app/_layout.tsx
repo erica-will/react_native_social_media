@@ -1,8 +1,7 @@
-import React from 'react';
+import { useAuth } from '@/src/hooks/useAuth';
 import { Stack } from 'expo-router';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { useAuth } from '@/hooks/useAuth';
 import { ActivityIndicator, View } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 
 export default function RootLayout() {
